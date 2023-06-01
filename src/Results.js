@@ -16,7 +16,7 @@ export default class Results extends React.Component {
     this.state = {
       error: false,
       CLIENT_ID: encodeURIComponent('6c230b0852aa48c7985f8a2e7377248c'),
-      REDIRECT_URI: encodeURIComponent('http:tsplaylistgenerator.com'),
+      REDIRECT_URI: encodeURIComponent('https://www.tsplaylistgenerator.com'),
       AUTH_ENDPOINT: 'https://accounts.spotify.com/authorize',
       SCOPE: 'playlist-modify-public',
       RESPONSE_TYPE: 'token',
