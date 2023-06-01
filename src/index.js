@@ -1,17 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import * as React from 'react';
+import { createRoot } from 'react-dom/client';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './style.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import Quiz from './Quiz';
+
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement);
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <div className='background-image'>
+    <h1 id='title'>Taylor Swift Playist Generator</h1>
+    <Quiz/>
+    <h2>About Me</h2>
+    <p id='descriptionText'>
+      My name is Ari Ostrow and I am a senior studying computer science at Case Western Reserve University. 
+      I have a strong passion for Taylor Swift and had the urge to make this.
+      <br/><br/>
+      If you have any questions about this project you can email me at <a id='emailColor' href="mailto:ari.ostrow@case.edu">ari.ostrow@case.edu</a>.
+      <br/><br/>
+      Thanks to all who helped populate the data for this project!
+    </p>
+  </div>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

@@ -1,0 +1,217 @@
+@font-face {
+  font-family: 'midnights';  /* Specify the font-family name */
+  src: url('fonts/midnights.ttf');  /* Provide the path to the font file */
+}
+
+@font-face {
+  font-family: 'debut';  /* Specify the font-family name */
+  src: url('fonts/debut.ttf');  /* Provide the path to the font file */
+}
+
+html {
+  overflow: scroll;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+.background-image {
+  background-image: url('images/lover-background.jpg');
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: 'debut';
+  font-size: 5.5vw;
+  text-align: center;
+  padding: 30px;
+}
+
+h2 {
+  font-family: 'debut';
+  font-size: 5vw;
+  padding: 0 30px;
+}
+
+#descriptionText {
+  padding: 30px;
+  font-size: min(2vw, 28px);
+  vertical-align: middle;
+}
+
+#emailColor {
+  color: white;
+}
+
+#regText {
+  font-size: min(2.5vw, 34px);
+  vertical-align: middle;
+}
+
+#excludeLabel {
+  text-align: center;
+  font-size: min(4vw, 40px);
+  padding: 2vh 0;
+  margin: 0;
+}
+
+#excludeButton {
+  text-align: center;
+  font-size: min(3vw, 28px);
+  padding: 0;
+  margin: 0;
+}
+
+#leftLabel {
+  font-size: min(1.7vw, 22px);
+  margin-top: -3vh;
+  vertical-align: top;
+  text-align: left;
+}
+
+#rightLabel {
+  font-size: min(1.7vw, 22px);
+  margin-top: -3vh;
+  vertical-align: top;
+  text-align: right;
+}
+
+#subTitle {
+  text-align: center;
+  font-size: min(4vw, 40px);
+  padding: 2vh 0;
+}
+
+#slider {
+  text-align: center;
+  margin-bottom: 3vh;
+  height: 100%;
+  padding: 0;
+}
+
+input[type='range'] {
+  appearance: none;
+  height: 1.5vh;
+  width: 100%;
+  border-radius: 10px;
+  background: white;
+}
+
+input[type='range']:disabled {
+  appearance: none;
+  height: 1.5vh;
+  width: 100%;
+  border-radius: 10px;
+  background: #b6b6b6;
+}
+
+input[type='range']::-webkit-slider-thumb { 
+  appearance: none; 
+  height: 2.3vh;
+  width: 2.3vh;
+  border-radius: 50%;
+  background: #7c8ef4;
+  box-shadow: 0 0 2px 0 #555;
+}
+
+#right-align {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+#row-question {
+  padding: 2.5vh 2.5vw;
+}
+
+#row-slider {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+#row-title {
+  padding: 0 2.5vw;
+  min-width: 576px;
+}
+
+#no-margin {
+  margin: 0;
+  padding: 0;
+}
+
+#select {
+  height: 100%;
+  font-size: min(1.7vw, 26px);
+}
+
+#menu-text {
+  color: black;
+  font-size: min(1.7vw, 26px)
+}
+
+#generate-button {
+  text-align: center;
+  font-size: min(1.7vw, 26px);
+  background-color: #7c8ef4;
+  border: #a47eef .05em solid;
+  height: 100%;
+  width: 100%;
+}
+
+#generic-button {
+  text-align: center;
+  font-size: min(1.7vw, 26px);
+  background-color: #7c8ef4;
+  border: #a47eef .05em solid;
+  height: 100%;
+}
+
+#div-border {
+  margin: 0 auto;
+  max-width: fit-content;
+}
+
+#row-songs {
+  padding: 0 0 3vh 0;
+}
+
+#row-buttons {
+  padding: 2.5vh 2.5vw;
+}
+
+#songTitle {
+  text-align: center;
+  font-size: min(2.7vw, 26px);
+  padding-bottom: 1vh;
+}
+
+#center {
+  text-align: center;
+  height: 100%;
+}
+
+#errorButton {
+  color: #FF9494;
+}
+
+#overlay {
+  background-color: #7c8ef4;
+  padding: .8vw;
+  font-size: min(1.3vw, 18px);
+  border: #a47eef .05em solid;
+  text-align: center;
+  margin: 0;
+}
+
+* {
+  font-family: 'midnights';
+  color: white;
+}
